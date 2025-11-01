@@ -1,0 +1,27 @@
+{
+  "name": "05_lets_get_hooked",
+  "version": "1.0.0",
+  "description": "\"organising our code\"",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anamiikkkaaaa/Namaste-React.git"
+  },
+  "author": "Anamika Rajput",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anamiikkkaaaa/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/anamiikkkaaaa/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
