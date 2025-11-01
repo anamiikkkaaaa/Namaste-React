@@ -1,21 +1,16 @@
 {
-  "name": "02_igniting_our_app",
+  "name": "04_talk_is_cheap",
   "version": "1.0.0",
-  "description": "\"This is our namaste react project\"\\",
+  "description": "\"let's dive in\"",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "dev": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anamiikkkaaaa/Namaste-React.git"
   },
-  "keywords": [
-    "react",
-    "namaste",
-    "react"
-  ],
   "author": "Anamika Rajput",
   "license": "ISC",
   "bugs": {
@@ -28,8 +23,5 @@
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
-  },
-  "browserlist": [
-    "last 10 Chrome version"
-  ]
+  }
 }
