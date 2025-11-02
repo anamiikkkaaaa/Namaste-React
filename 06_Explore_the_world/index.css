@@ -39,7 +39,32 @@
     height:200px;
     
 }
-.filter-btn{
+.filter-btn, 
+.search-btn{
    margin:10px 0px; 
    cursor: pointer;
+}
+
+.shimmer-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.shimmer-card{
+    width:250px;
+    height:400px;
+    background-color: #f0f0f0;
+    margin:20px;
+}
+
+.login{
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.filter{
+    display:flex;
+}
+.search{
+    margin:0px 10px;
 }
