@@ -1,0 +1,32 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anamiikkkaaaa/Namaste-React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anamiikkkaaaa/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/anamiikkkaaaa/Namaste-React#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^6.30.1"
+  }
+}
