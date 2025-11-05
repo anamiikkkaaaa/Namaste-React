@@ -37,7 +37,7 @@ const appRouter = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/restaurants/:resId", //colon mean route is dynamic resId is dynamic
+        path: "/restaurant/:resId", //colon mean route is dynamic resId is dynamic
         element: <RestaurantMenu/>
       }
     ],

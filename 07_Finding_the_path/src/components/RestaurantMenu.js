@@ -7,20 +7,23 @@ const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState([]);
   const [resDetails, setResDetails] = useState([]);
 
+  const { resId } = useParams();
+  
   useEffect(() => {
     fetchMenu();
   }, []);
-
-  const { resId } = useParams();
-
+  console.log("restaurant menu render")
+  console.log("resmenu")
   const url = MENU_API+resId;
-  //console.log(url);
+  console.log(url);
   const fetchMenu = async () => {
-    const data = await fetch(url);
+    try {
+          const data = await fetch(url);
 
     const json = await data.json();
 
-    //console.log(json);
+    console.log(json);
+    console.log("testing")
     const resIntro = json.data?.cards[2]?.card?.card?.info;
     const itemCards =
       json.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
@@ -28,6 +31,10 @@ const RestaurantMenu = () => {
 
     setResDetails(resIntro);
     setResInfo(itemCards);
+    }
+    catch(err){
+      console.log(err);
+    }
     //console.log(resInfo);
   };
 
