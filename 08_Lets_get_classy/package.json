@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "08_lets_get_classy",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/anamiikkkaaaa/Namaste-React.git"
   },
-  "author": "",
+  "author": "Anamika Rajput",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anamiikkkaaaa/Namaste-React/issues"
@@ -17,7 +17,7 @@
   "homepage": "https://github.com/anamiikkkaaaa/Namaste-React#readme",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.16.0"
+    "parcel": "^2.16.1"
   },
   "dependencies": {
     "react": "^19.2.0",
