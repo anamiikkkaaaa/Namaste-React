@@ -12,10 +12,13 @@ const RestaurantMenu = () => {
   useEffect(() => {
     fetchMenu();
   }, []);
+
   console.log("restaurant menu render")
   console.log("resmenu")
+
   const url = MENU_API+resId;
   console.log(url);
+  
   const fetchMenu = async () => {
     try {
           const data = await fetch(url);

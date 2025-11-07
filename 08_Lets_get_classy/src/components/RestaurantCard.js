@@ -1,15 +1,31 @@
-const RestaurantCard = () => {
+import { CDN_URL } from "../utils/constants";
+
+const RestaurantCard = (props) => {
+
+  const {
+    name,
+    cuisines,
+    cloudinaryImageId,
+    costForTwo,
+    avgRating,
+    id
+  } = props.resData?.info;
+  
+  const {deliveryTime} = props.resData?.info?.sla;
+
   return (
-    <div>
+    <div className="res-card">
       <img
-        src="https://www.byteknightdesigns.net/wp-content/uploads/2019/03/delicious-restaurant-logo-design-template-ld009.jpg"
+        src= {CDN_URL + cloudinaryImageId}
         alt="res-logo"
         className="res-logo"
       ></img>
-      <h3>Res Name</h3>
-      <h4>Cuisine</h4>
-      <h4>Rating</h4>
-      <h4>Cost</h4>
+      <h5>{id}</h5>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{avgRating}</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{deliveryTime} mins</h4>
     </div>
   );
 };
